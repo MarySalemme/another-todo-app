@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "chai": "^4.1.2",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.0.5",
     "react": "^16.2.0",
@@ -13,7 +14,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "selenium-setup": "selenium-standalone install",
+    "selenium-start": "selenium-standalone start",
+    "e2e-tests": "wdio wdio.conf.js",
+    "e2e-tests-watch": "wdio wdio.conf.js --watch"
   },
   "devDependencies": {
     "eslint": "^4.15.0",
@@ -21,6 +26,11 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
-    "react-test-render": "^1.1.1"
+    "react-test-render": "^1.1.1",
+    "selenium-standalone": "^6.12.0",
+    "wdio-dot-reporter": "0.0.9",
+    "wdio-mocha-framework": "^0.5.12",
+    "wdio-selenium-standalone-service": "0.0.9",
+    "webdriverio": "^4.9.11"
   }
 }
