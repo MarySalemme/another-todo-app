@@ -5,8 +5,7 @@ module.exports = {
         "prefer-destructuring": ["error", {
             "array": true,
             "object": false
-        }, {
-            "enforceForRenamedProperties": false
-        }]
+        }],
+        "import/no-extraneous-dependencies": [2, { devDependencies: true }]
     },
 };
