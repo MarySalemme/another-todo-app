@@ -10,7 +10,7 @@ const nextId = () => {
 const actions = {
   submitTodo(text) {
     return {
-      types: types.SUBMIT_TODO,
+      type: types.SUBMIT_TODO,
       id: nextId(),
       text,
     };
